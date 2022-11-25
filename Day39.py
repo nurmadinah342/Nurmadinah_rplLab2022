@@ -1,8 +1,11 @@
-jumlah_barang = 216
-jumlah_barang_dalam_gross = jumlah_barang / 144
+total = 5000
+setelah_diskon = total
 
-# konversi x.0 menjadi x
-if jumlah_barang_dalam_gross % 1 == 0:
-  jumlah_barang_dalam_gross = int(jumlah_barang_dalam_gross)
+if total < 100000 :
+    diskon = total * (5 /100)
+else:
+    diskon = total * (10/1000)
 
-print(f'{jumlah_barang} = {jumlah_barang_dalam_gross} gross')
+setelah_diskon = total - diskon
+print ("diskonnya yaitu : ", diskon)
+print ("harga setelah di diskon", setelah_diskon)
