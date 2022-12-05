@@ -1,15 +1,15 @@
-list_a = [1]
-set_a = {1, 39}
+list_a = [1, 2, 3, 4]
+set_a = {1, 2, 3, 4}
 
 print('[Sebelum]')
 print(f'  list\t: {list_a}')
 print(f'  set\t: {set_a}')
 
-list_a.append(10)
-list_a.append(50)
+list_a.remove(2)
+list_a.remove(4)
 
-set_a.add(50)
-set_a.add(100)
+set_a.remove(2)
+set_a.remove(4)
 
 print('[Sesudah]')
 print(f'  list\t: {list_a}')
